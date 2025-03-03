@@ -8,6 +8,7 @@ suc rn r4
 	area pn, code, readonly
 	entry
 	export __main
+
 		
 __main
 	mov numero,#34
