@@ -10,7 +10,9 @@ suc rn r4
 	export __main
 		
 __main
-	mov numero,#8
+	mov numero,#34
+	;condicional
+	
 	mov sumuno,#0
 	mov sumdos,#1
 	
