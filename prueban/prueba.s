@@ -45,7 +45,6 @@ ciclo
 	
 final
 	mov numero,suc
-	end
 fin b fin
 	
 	end
