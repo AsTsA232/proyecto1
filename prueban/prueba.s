@@ -5,6 +5,7 @@ sumuno rn r1
 sumdos rn r2
 suc rn r4
 punt rn r5
+cont rn r6
 
 	area pn, code, readonly
 	entry
@@ -13,6 +14,7 @@ punt rn r5
 		
 __main
 	mov numero,#4
+	mov cont,#0
 	;condicional
 	cmp numero, #46
 	bge fin
@@ -32,13 +34,10 @@ ciclo
 ;carga en la memoria
 	str suc, [punt]
 	add punt,#1
-	
+	add cont,#1
 ;reinicio del ciclo
 	
-	cmp suc, #46
-	bge fin
-	
-	cmp suc, numero
+	cmp cont, #46
 	bge fin
 	
 	mov suc,#0
