@@ -37,14 +37,15 @@ ciclo
 	add cont,#1
 ;reinicio del ciclo
 	
-	cmp cont, #46
+	cmp cont, numero
 	bge fin
 	
 	mov suc,#0
 	b ciclo
 	
 final
-	mov numero, suc
+	mov numero,suc
+	end
 fin b fin
 	
 	end
