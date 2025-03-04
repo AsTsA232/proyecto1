@@ -12,7 +12,7 @@ punt rn r5
 
 		
 __main
-	mov numero,#45
+	mov numero,#4
 	;condicional
 	cmp numero, #46
 	bge fin
@@ -32,10 +32,16 @@ ciclo
 ;carga en la memoria
 	str suc, [punt]
 	add punt,#1
+	
 ;reinicio del ciclo
-	mov suc,#0
-	cmp numero, #46
+	
+	cmp suc, #46
 	bge fin
+	
+	cmp suc, numero
+	bge fin
+	
+	mov suc,#0
 	b ciclo
 	
 final
