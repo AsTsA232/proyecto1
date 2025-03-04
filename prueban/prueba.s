@@ -12,12 +12,14 @@ punt rn r5
 
 		
 __main
-	mov numero,#134
+	mov numero,#45
 	;condicional
-	
+	cmp numero, #46
+	bge fin
 	mov sumuno,#0
 	mov sumdos,#1
 	ldr punt,=0x20000000
+	b ciclo
 	
 ciclo	
 ;sucesion
@@ -32,7 +34,8 @@ ciclo
 	add punt,#1
 ;reinicio del ciclo
 	mov suc,#0
-	beq final
+	cmp numero, #46
+	bge fin
 	b ciclo
 	
 final
