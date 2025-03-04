@@ -12,7 +12,7 @@ punt rn r5
 
 		
 __main
-	mov numero,#34
+	mov numero,#134
 	;condicional
 	
 	mov sumuno,#0
@@ -26,8 +26,8 @@ ciclo
 	mov sumuno,sumdos
 	mov sumdos,suc
 	cmp numero,suc
-;carga en la memoria
 	
+;carga en la memoria
 	str suc, [punt]
 	add punt,#1
 ;reinicio del ciclo
@@ -36,6 +36,7 @@ ciclo
 	b ciclo
 	
 final
+	mov numero, suc
 fin b fin
 	
 	end
